@@ -20,47 +20,46 @@ class App extends Component {
     return (
     <Router history={this.history}>
       <div className="App">
-      <div>
-        <header className="Menu1">
-          <nav className="MyRow">
-            <ul className="List"><a href="/" className="Link" class="btn btn-secondary" role="button" aria-pressed="true">Home</a></ul>
-            <ul className="List"><a href="https://docs.google.com/document/d/1bV1kvFRinTEv72zRznAptFIcL3CW0q2ckHVhPQxeang/edit?usp=sharing" className="Link" target="_blank" class="btn btn-secondary" role="button" aria-pressed="true" >Resume</a></ul>
-            <ul className="List"><a href="https://github.com/xqk559" className="Link" target="_blank" class="btn btn-secondary" role="button" aria-pressed="true">GitHub</a></ul>
-            <ul className="List"><a href="/Contact" class="btn btn-secondary" role="button" aria-pressed="true">Contact</a></ul>
-            <ul class="dropdown" className="List">
-              <button className="List" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Projects
-              </button>
-              <div className="List" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="https://hindsight-bc.firebaseapp.com/" target="_blank">Hindsight BC</a>
-                <a class="dropdown-item" href="#">Habitual</a>
-              </div>
-            </ul>
-          </nav>
-        </header>
-        <Route path="/" exact render={() =>
-        <body className="Body1">
-                  <br></br>
-                  <img src = { require ('./photo.png')} height= "200" width= "200" />
-                  <br></br>
-                  <b className="BigText">Keith Davis</b>
-                  <br></br>
-                  <div>I am a full stack web developer with experience in React,</div>
-                  <div>React Native, Python, Firebase, and currently relevant libraries.</div>
-                  <br></br>
-                  <b className="BigText">Projects:</b>
-            </body>} />
-            <Route path="/Resume" exact render={() => <h1>Resume</h1>} />
-            <Route path="/Contact" exact render={() =>
-              <div>
-                <h1>Contact</h1>
-                <br></br>
-                <p>Email: xqk559@gmail.com</p>
-                <p>GitHub: <a href="https://github.com/xqk559" target="_blank">https://github.com/xqk559</a></p>
-                </div>} />
+        <div>
+          <header className="Menu1">
+            <nav className="MyRow">
+              <ul className="List"><a href="/" className="Link" class="btn btn-secondary" role="button" aria-pressed="true">Home</a></ul>
+              <ul className="List"><a href="https://docs.google.com/document/d/1bV1kvFRinTEv72zRznAptFIcL3CW0q2ckHVhPQxeang/edit?usp=sharing" className="Link" target="_blank" class="btn btn-secondary" role="button" aria-pressed="true" >Resume</a></ul>
+              <ul className="List"><a href="https://github.com/xqk559" className="Link" target="_blank" class="btn btn-secondary" role="button" aria-pressed="true">GitHub</a></ul>
+              <ul className="List"><a href="/Contact" class="btn btn-secondary" role="button" aria-pressed="true">Contact</a></ul>
+              <ul class="dropdown" className="List">
+                <button className="List" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Projects
+                </button>
+                <div className="List" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="https://hindsight-bc.firebaseapp.com/" target="_blank">Hindsight BC</a>
+                  <a class="dropdown-item" href="#">Habitual</a>
+                </div>
+              </ul>
+            </nav>
+          </header>
+          <Route path="/" exact render={() =>
+          <body className="Body1">
+                    <br></br>
+                    <img src = { require ('./photo.png')} height= "200" width= "200" />
+                    <br></br>
+                    <b className="BigText">Keith Davis</b>
+                    <br></br>
+                    <div>I am a full stack web developer with experience in React,</div>
+                    <div>React Native, Python, Firebase, and currently relevant libraries.</div>
+                    <br></br>
+          </body>} />
+          <Route path="/Resume" exact render={() => <h1>Resume</h1>} />
+          <Route path="/Contact" exact render={() =>
+            <div>
+              <h1>Contact</h1>
+              <br></br>
+              <p>Email: xqk559@gmail.com</p>
+              <p>GitHub: <a href="https://github.com/xqk559" target="_blank">https://github.com/xqk559</a></p>
+              </div>} />
+        </div>
       </div>
-      </div>
-      </Router>
+    </Router>
     );
   }
 }
