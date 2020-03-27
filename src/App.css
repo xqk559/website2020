@@ -7,6 +7,7 @@
   background-image: url("full-bloom.png");
   height: 100%;
   width: 100%;
+  overflow: scroll;
 }
 
 .Header {
@@ -50,7 +51,7 @@ html {
 }
 
 .MyColumn {
-  flex: .1; 
+  flex: .1;
   margin: 0 1%;
   display: flex;
   justify-content: center;

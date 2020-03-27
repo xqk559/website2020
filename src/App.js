@@ -46,7 +46,7 @@ class App extends Component {
                     <b className="BigText">Keith Davis</b>
                     <br></br>
                     <div>I am a full stack web developer with experience in React,</div>
-                    <div>React Native, Python, Firebase, and currently relevant libraries.</div>
+                    <div>React Native, Python, Firebase, and other currently relevant libraries.</div>
                     <br></br>
           </body>} />
           <Route path="/Resume" exact render={() => <h1>Resume</h1>} />
