@@ -3,19 +3,19 @@ import './App.css';
 import {BrowserRouter as Router, Route, Link, Redirect, hashHistory} from 'react-router-dom';
 import {createBrowserHistory } from 'history';
 
-let history = createBrowserHistory({
-  basename: "", // The base URL of the app (see below)
-  forceRefresh: false, // Set true to force full page refreshes
-  keyLength: 6, // The length of location.key
-  // A function to use to confirm navigation with the user (see below)
-  getUserConfirmation: (message, callback) => callback(window.confirm(message))
-});
-
 class App extends Component {
   state = {
     dontclick : null,
   }
   render() {
+
+    let history = createBrowserHistory({
+      basename: "", // The base URL of the app (see below)
+      forceRefresh: false, // Set true to force full page refreshes
+      keyLength: 6, // The length of location.key
+      // A function to use to confirm navigation with the user (see below)
+      getUserConfirmation: (message, callback) => callback(window.confirm(message))
+    });
 
     return (
     <Router history={this.history}>
@@ -33,13 +33,12 @@ class App extends Component {
               </button>
               <div className="List" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="https://hindsight-bc.firebaseapp.com/" target="_blank">Hindsight BC</a>
-                <a class="dropdown-item" href="#">Puppycoin</a>
-                <a class="dropdown-item" href="#">Old Puppy Adoption</a>
+                <a class="dropdown-item" href="#">Habitual</a>
               </div>
             </ul>
           </nav>
         </header>
-        <Route path="/" exact render={() => 
+        <Route path="/" exact render={() =>
         <body className="Body1">
                   <br></br>
                   <img src = { require ('./photo.png')} height= "200" width= "200" />
@@ -52,7 +51,7 @@ class App extends Component {
                   <b className="BigText">Projects:</b>
             </body>} />
             <Route path="/Resume" exact render={() => <h1>Resume</h1>} />
-            <Route path="/Contact" exact render={() => 
+            <Route path="/Contact" exact render={() =>
               <div>
                 <h1>Contact</h1>
                 <br></br>
