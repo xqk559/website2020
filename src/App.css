@@ -4,19 +4,11 @@
   align-items: center;
   font: verdana;
   align-content: center;
-  background-image: url("full-bloom.png");
-  height: 100%;
-  width: 100%;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .Header {
   font-weight: 900;
-  width: 100%;
-}
-
-html {
-  background-image: url("full-bloom.png");
 }
 
 .Body1 {
@@ -26,9 +18,12 @@ html {
   font: verdana;
   align-content: center;
   background-color: transparent;
+  max-width: 600px;
+  margin:0 auto;
 }
 
 .Menu1 {
+  width: 100%;
   background-color: darkgray;
 }
 
@@ -37,7 +32,6 @@ html {
   color: black;
   font: verdana;
   font-weight: 900;
-
 }
 
 .MyRow {
@@ -46,8 +40,6 @@ html {
   justify-content: center;
   align-content: center;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .MyColumn {
@@ -65,4 +57,15 @@ html {
 
 .List {
   margin: 10px 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .Menu1 {
+    padding-right: 40px;
+    -webkit-transform:scale(0.6);
+    -moz-transform:scale(0.6);
+    -ms-transform:scale(0.6);
+    transform:scale(0.6);
+    background-color: transparent;
+  }
 }
