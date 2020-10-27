@@ -21,9 +21,10 @@ class App extends Component {
                   Projects
                 </button>
                 <div className="List" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="https://habitual-f64a5.firebaseapp.com/" target="_blank" rel="noopener noreferrer">Habitual</a>
-                  <a class="dropdown-item" href="https://hindsight2020-19f09.firebaseapp.com/" target="_blank" rel="noopener noreferrer">Hindsight BC</a>
-                  <a class="dropdown-item" href="https://burgerbuilder-cea69.firebaseapp.com/" target="_blank" rel="noopener noreferrer">Burger Builder</a>
+                  <a class="dropdown-item" href="http://142.93.247.242/" target="_blank" rel="noopener noreferrer">Skinet</a>
+                  <a class="dropdown-item" href="https://habitual.kdavis.us/" target="_blank" rel="noopener noreferrer">Habitual</a>
+                  <a class="dropdown-item" href="https://hindsightbc.kdavis.us/" target="_blank" rel="noopener noreferrer">Hindsight BC</a>
+                  <a class="dropdown-item" href="https://burgerbuilder.kdavis.us/" target="_blank" rel="noopener noreferrer">Burger Builder</a>
                 </div>
               </ul>
             </nav>
